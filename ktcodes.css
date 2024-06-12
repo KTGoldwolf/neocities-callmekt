@@ -25,6 +25,7 @@ body {
   font-size: 30px;
   fill: gold;
   font-family: "Sora";
+  text-shadow: 2px 2px rgb(68, 67, 145,1);
 }
 
 @keyframes MoveUpDown {
@@ -50,7 +51,7 @@ body {
 
 #statblock-title {
   font-family: "tiny5";
-  text-shadow: 5px 5px rgb(68, 67, 145,1);
+  text-shadow: 4px 4px rgb(68, 67, 145,1);
   color: gold;
   margin: 0;
   font-size: 60px;
