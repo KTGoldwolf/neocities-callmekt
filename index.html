@@ -11,20 +11,37 @@
   </head>
   <body>
     <div class="banner-display">
-      <svg class="banner-svg" viewBox="-10 0 400 200">
-        <path id="header-text-curve" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145" />
+      <!-- With thanks to https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+      <svg class="banner-svg" viewBox="-10 0 400 300">
+        <path id="header-text-curve" d="M 6 150 C 49.63 93 105.79 36.65 156.2 47.55 C 207.89 58.74 213 131.91 332 2" />
         <text width="500">
           <textPath xlink:href="#header-text-curve" id="header-text-special">
-            kt.codes-kt.codes-kt.codes-kt.codes-kt.codes-kt.codes
+            kt.codes-kt.codes-kt.codes-kt.codes-
           </textPath>
         </text>
       </svg>
       <img id="banner-image-hover" class="banner-fixed" src="/img/web-banner-tmp.png" width="300px"/>
     </div>
-    <!-- With thanks to https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+    <div id="main-content">
+      <div class="row">
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+        </div>
+      </div>
+    </div>
 
-
-    
 
 
   </body>

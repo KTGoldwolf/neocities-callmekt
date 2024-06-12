@@ -22,8 +22,9 @@ body {
 }
 
 #header-text-special {
-  font-size: 20p;
+  font-size: 40p;
   fill: gold;
+  font-family: "Sora";
 }
 
 @keyframes MoveUpDown {
@@ -33,4 +34,24 @@ body {
   100% {
     transform: translateY(50px);
   }  
+}
+
+#main-content{
+  position: absolute;
+  top:100px;
+  left:300px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
