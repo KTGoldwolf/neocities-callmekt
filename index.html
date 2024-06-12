@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="banner-display">
       <!-- With thanks to https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
-      <svg class="banner-svg" viewBox="-10 0 400 300">
+      <svg class="banner-svg" viewBox="-10 0 800 300">
         <path id="header-text-curve" d="M 6 150 C 49.63 93 105.79 36.65 156.2 47.55 C 207.89 58.74 213 131.91 332 2" />
         <text width="500">
           <textPath xlink:href="#header-text-curve" id="header-text-special">
@@ -24,9 +25,28 @@
     </div>
     <div id="main-content">
       <div class="row">
-        <div class="column">
+        <div class="column" id="statblock">
+          <p id="statblock-title">
+            ABOUT ME
+          </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            <ul>
+              <li>
+                I like keyboards
+              </li>              
+              <li>
+                I like video games
+              </li>
+              <li>
+                Programming every day
+              </li>
+              <li>
+                I mostly know Java but I'm getting better over time
+              </li>
+              <li>
+                My favorite champion is Twitch (the Rat, not the Streaming Website.)
+              </li>
+            </ul>
           </p>
         </div>
         <div class="column">
