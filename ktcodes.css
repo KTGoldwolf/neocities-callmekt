@@ -1,13 +1,8 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
 body {
   background-color: darkcyan;
   background-size: cover;
   background-attachment: fixed;
   color: black;
-  font-family: Verdana;
 }
 
 #banner-image-hover {
@@ -37,19 +32,39 @@ body {
   }  
 }
 
-#main-content{
-  position: absolute;
-  top:200px;
-  left:300px;
-  font-family: "Sora";
+#my-name {
+  animation: Rainbow 5s alternate infinite;
+  display: inline-block;
 }
 
-#statblock {
+@keyframes Rainbow {
+  0% {
+    color:red;
+  }
+  50% {
+    color: blue;
+  }  
+  100% {
+    color: gold;
+  }
+}
+
+#equipment-info {
+  font-size: small;
+  padding-left: 20px;
+  padding-top: 0;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.39)
+}
+
+#statblock h2 {
+  font-family: "tiny5";
   background-color: rgba(0, 0, 255, 0.164);
-  border-radius: 15px
+  border-radius: 15px;
+  padding-left: 20px;
 }
 
-#statblock-title {
+.statblock-title {
   font-family: "tiny5";
   text-shadow: 4px 4px rgb(68, 67, 145, 1);
   color: gold;
@@ -58,18 +73,50 @@ body {
   text-align: center;
 }
 
-#main-content li{
-  padding: 5px;
+#statblock a {
+  color: gold;
+}
+
+#statblock a:hover {
+  color: rgb(255, 123, 0);
+}
+
+#statblock a:visited {
+  color: rgb(165, 144, 25);
+}
+
+#main-content{
+  position: absolute;
+  top:200px;
+  left:300px;
+  font-family: "Sora";
+  width: 80%;
+}
+
+.row {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
 }
 
 .column {
-  float: left;
-  width: 40%;
   padding: 15px;
+  display: table-cell;
+  background-color: rgba(0, 0, 255, 0.164);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+  min-width: 400px;
 }
 
 .row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+#footer-line {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.39)
 }
